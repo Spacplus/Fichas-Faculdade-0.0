@@ -1,4 +1,3 @@
-(Html)
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -23,7 +22,16 @@
 <body>
     
     <header>
-        <h1>Criação de Ficha de Personagem - D&D 5e</h1>
+        <h1> Criação de Ficha de Personagem - D&D 5e</h1>
+        <nav>
+            <ul>
+                <li><a href="projeto/pag-1.html"><button>Home</button></a></li>
+                <hr>
+                <li><a href="projeto/Untitled-1.html"><button>Criação</button></a></li>
+                <hr>
+                <li><a href="/sobre.html"><button>Sobre</button></a></li>
+            </ul>
+        </nav>
     </header>
     
     <section>
@@ -37,6 +45,8 @@
                 <option value="guerreiro">Guerreiro</option>
                 <option value="mago">Mago</option>
                 <option value="ladino">Ladino</option>
+                <option value="paladino">Paladino</option>
+                <option value="necromante">Necromante</option>
                 <!-- Adicionar outras classes -->
             </select>
 
@@ -48,31 +58,26 @@
             <label for="strength">Força:</label>
             <input type="number" id="strength" name="strength" min="1" max="20" oninput="atualizarModificador('strength', 'mod_strength')">
             
-
             <!-- Destreza -->
             <span id="mod_dexterity">+0</span>
             <label for="dexterity">Destreza:</label>
             <input type="number" id="dexterity" name="dexterity" min="1" max="20" oninput="atualizarModificador('dexterity', 'mod_dexterity')">
             
-
             <!-- Constituição -->
             <span id="mod_constitution">+0</span>
             <label for="constitution">Constituição:</label>
             <input type="number" id="constitution" name="constitution" min="1" max="20" oninput="atualizarModificador('constitution', 'mod_constitution')">
             
-
             <!-- Inteligência -->
             <span id="mod_intelligence">+0</span>
             <label for="intelligence">Inteligência:</label>
             <input type="number" id="intelligence" name="intelligence" min="1" max="20" oninput="atualizarModificador('intelligence', 'mod_intelligence')">
             
-
             <!-- Sabedoria -->
             <span id="mod_wisdom">+0</span>
             <label for="wisdom">Sabedoria:</label>
             <input type="number" id="wisdom" name="wisdom" min="1" max="20" oninput="atualizarModificador('wisdom', 'mod_wisdom')">
             
-
             <!-- Carisma -->
             <span id="mod_charisma">+0</span>
             <label for="charisma">Carisma:</label>
@@ -82,6 +87,7 @@
         </form>
     </section>
 </body>
+</html>
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 (Css)
 
@@ -98,6 +104,24 @@ header {
     text-align: center;
 }
 
+ul {
+   
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #5f5f5f; /* Cor de fundo azul */
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    transition: background-color 0.3s ease;
+
+
+
+    background-color: #ffffff; /* Cor ao passar o mouse */
+
+
+}
 form {
     max-width: 600px;
     margin: 20px auto;
