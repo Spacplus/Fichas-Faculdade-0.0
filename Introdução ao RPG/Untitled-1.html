@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG - Aventura Fantástica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Mundo do RPG!</h1>
+        <nav>
+            <ul>
+                <li><a href="Untitled-1.html">Início</a></li>
+                <li><a href="classes.html">Classes de RPG</a></li>
+                <li><a href="ficha.html">Crie sua ficha</a></li>
+                <li><a href="sobre.html">Nossa Equipe</a></li>
+            </ul>
+        </nav>
+    </header>..
+
+    <section class="intro">
+        <h2>O que é RPG?</h2>
+        <p>RPG (Role-Playing Game) é um jogo onde os participantes criam personagens e vivenciam histórias em um mundo fictício. Através de narrativa e interpretação, os jogadores podem explorar universos fantásticos, enfrentar desafios e se divertir colaborativamente.</p>
+    </section>
+
+    <section class="classes">
+        <h2>Classes de RPG</h2>
+
+        <div class="class-box" data-hover="imagens/guerreiro-hover.jpg">
+            <img src="imagens/guerreiro.jpg" alt="Imagem do Guerreiro">
+            <h3>Guerreiro</h3>
+            <p>O guerreiro é o combatente de primeira linha, especializado em diversas armas e em combate corpo a corpo.</p>
+        </div>
+
+        <div class="class-box" data-hover="imagens/mago-hover.jpg">
+            <img src="imagens/mago.jpg" alt="Imagem do Mago">
+            <h3>Mago</h3>
+            <p>O mago manipula o poder arcano, lançando feitiços devastadores e controlando a magia do ambiente.</p>
+        </div>
+
+        <div class="class-box" data-hover="imagens/ladino-hover.jpg">
+            <img src="imagens/ladino.jpg" alt="Imagem do Ladino">
+            <h3>Ladino</h3>
+            <p>O ladino é astuto e ágil, utilizando furtividade e ataques surpresa para vencer seus oponentes.</p>
+        </div>
+
+        <div class="class-box" data-hover="imagens/clerigo-hover.jpg">
+            <img src="imagens/clerigo.jpg" alt="Imagem do Clérigo">
+            <h3>Clérigo</h3>
+            <p>O clérigo é o curador do grupo, utilizando o poder divino para restaurar a saúde e proteger seus aliados.</p>
+        </div>
+
+        <!-- Novas classes adicionadas -->
+        <div class="class-box" data-hover="imagens/paladino-hover.jpg">
+            <img src="imagens/paladino.jpg" alt="Imagem do Paladino">
+            <h3>Paladino</h3>
+            <p>O paladino é um guerreiro sagrado, defensor da justiça, que combina habilidades marciais com magia divina.</p>
+        </div>
+
+        <div class="class-box" data-hover="imagens/druida-hover.jpg">
+            <img src="imagens/druida.jpg" alt="Imagem do Druida">
+            <h3>Druida</h3>
+            <p>O druida é um guardião da natureza, capaz de se transformar em animais e manipular os elementos naturais.</p>
+        </div>
+
+        <div class="class-box" data-hover="imagens/bardo-hover.jpg">
+            <img src="imagens/bardo.jpg" alt="Imagem do Bardo">
+            <h3>Bardo</h3>
+            <p>O bardo é um artista versátil, utilizando música e magia para inspirar aliados e desencadear feitiços.</p>
+        </div>
+
+        <div class="class-box" data-hover="imagens/barbaro-hover.jpg">
+            <img src="imagens/barbaro.jpg" alt="Imagem do Bárbaro">
+            <h3>Bárbaro</h3>
+            <p>O bárbaro é um lutador feroz, conhecido por sua força bruta e resistência, atacando com fúria incontrolável.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Mundo do RPG. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Adiciona funcionalidade para alterar imagem ao passar o mouse
+        document.querySelectorAll('.class-box').forEach(box => {
+            const img = box.querySelector('img');
+            const originalSrc = img.src;
+            const hoverSrc = box.getAttribute('data-hover');
+
+            box.addEventListener('mouseover', () => {
+                img.src = hoverSrc;
+            });
+
+            box.addEventListener('mouseout', () => {
+                img.src = originalSrc;
+            });
+        });
+    </script>
+</body>
+</html>
